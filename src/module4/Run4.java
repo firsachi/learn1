@@ -1,7 +1,9 @@
+package module4;
+
 /**
  * Created by firsov on 25.01.2017.
  */
-public class Run5 {
+public class Run4 {
 
     public static void main(String[] args){
         message();
