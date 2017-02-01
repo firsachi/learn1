@@ -1,9 +1,9 @@
-package module1;
+package task1.module5;
 
 /**
  * Created by firsov on 25.01.2017.
  */
-public class Run1 {
+public class Run5 {
 
     public static void main(String[] args){
         message();
