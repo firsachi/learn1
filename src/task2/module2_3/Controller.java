@@ -1,6 +1,6 @@
 package task2.module2_3;
 
-import task2.View;
+import task2.module2_2.View;
 
 public class Controller {
 	
