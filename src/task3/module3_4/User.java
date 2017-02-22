@@ -90,7 +90,7 @@ public class User {
     private void chekSumm(int summ){
          boolean result = false;
          if ( balance < summ) try {
-             throw  new Exception(Messages.BALNSE_MIN);
+             throw  new IllegalArgumentException(Messages.BALNSE_MIN);
          } catch (Exception e) {
              e.printStackTrace();
          }
