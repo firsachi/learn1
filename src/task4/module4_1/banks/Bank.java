@@ -29,7 +29,10 @@ public abstract class Bank {
     public abstract int getLimitOfFunding();
     public abstract int getMonthlyRate();
     public abstract int getCommission(int summ);
-    public abstract double moneyPaidMonthlyForSalary();
+
+    public double moneyPaidMonthlyForSalary(){
+        return 0;
+    }
 
     public void setId(long id) {
         this.id = id;
