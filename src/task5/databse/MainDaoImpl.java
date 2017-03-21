@@ -31,7 +31,7 @@ public class MainDaoImpl implements MainDao {
     @Override
     public boolean delete(Room room) {
         for (int index = 0; index < filling; index++ ) {
-            if (room.getId() == rooms[index].getId()){
+            if (room.equals(rooms[index])){
                 rooms[index] = null;
                 return true;
             }
@@ -42,7 +42,7 @@ public class MainDaoImpl implements MainDao {
     @Override
     public Room update(Room room) {
         for (int index = 0; index < filling; index++ ) {
-            if (room.getId() == rooms[index].getId()){
+            if (room.equals(rooms[index])){
                 rooms[index] = room;
                 break;
             }
