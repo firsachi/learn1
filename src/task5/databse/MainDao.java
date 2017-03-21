@@ -7,8 +7,8 @@ import task5.entity.Room;
  */
 public interface MainDao {
 
-    public Room save(Room room);
-    public boolean delete(Room room);
-    public Room update(Room room);
-    public Room findById(long id);
+    Room save(Room room);
+    boolean delete(Room room);
+    Room update(Room room);
+    Room findById(long id);
 }
