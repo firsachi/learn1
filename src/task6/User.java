@@ -3,17 +3,17 @@ package task6;
 /**
  * Created by firsov on 23.03.2017.
  */
-public class User {
+public final class User {
 
-    private long id;
+    private final long id;
 
-    private String firstName;
+    private final String firstName;
 
-    private String lastName;
+    private final String lastName;
 
-    private int salary;
+    private final int salary;
 
-    private int balance;
+    private final int balance;
 
     public User(long id, String firstName, String lastName, int salary, int balance) {
         this.id = id;
@@ -27,39 +27,19 @@ public class User {
         return id;
     }
 
-    public void setId(long id) {
-        this.id = id;
-    }
-
     public String getFirstName() {
         return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
     }
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
     public int getSalary() {
         return salary;
     }
 
-    public void setSalary(int salary) {
-        this.salary = salary;
-    }
-
     public int getBalance() {
         return balance;
-    }
-
-    public void setBalance(int balance) {
-        this.balance = balance;
     }
 }
