@@ -1,4 +1,4 @@
-package task6.task_new;
+package task6.task_new_6_1;
 
 import task6.View;
 import task6.utils.ArraysUtils;
