@@ -4,7 +4,7 @@ package task6.utils;
  * Created by firsov on 16.03.2017.
  */
 public final class ArraysUtils {
-
+    
     public static final int sum(int array[]){
         int result = 0;
         for (int value : array){

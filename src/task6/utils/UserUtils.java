@@ -13,10 +13,22 @@ import java.util.Set;
 public class UserUtils {
 
     public static User[] uniqueUsers(User[] users){
-        User arrayUsers[] = users;
-        Set<User> set = new HashSet<User>(Arrays.asList(arrayUsers));
-        return  set.toArray(new User[set.size()]);
+        User temp[] = deleteEmptyUsers(users);
+        User result[] = new User[]{temp[0]};
+        for (User user : temp){
+            boolean flag = false;
+            for(User user1 : result){
+                if(user.equals(user1)){
+                    flag = true;
+                }
+            }
+            if(!flag){
+                result = addElemntArry(result, user);
+            }
+        }
+        return  result;
     }
+
 
     public  static User[] usersWithContitionalBalance(User[] users, int balance){
         User arrayUsers[] = new User[0];
