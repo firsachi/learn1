@@ -14,7 +14,16 @@ public class Order {
     private String shopIdentificator;
     private User user;
 
-    public long getId() {
+    public Order(long id, int price, Currency currency, String itemName, String shopIdentificator, User user) {
+		this.id = id;
+		this.price = price;
+		this.currency = currency;
+		this.itemName = itemName;
+		this.shopIdentificator = shopIdentificator;
+		this.user = user;
+	}
+
+	public long getId() {
         return id;
     }
 
@@ -62,6 +71,8 @@ public class Order {
         this.user = user;
     }
 
+    
+    
     @Override
     public String toString() {
         return "Order{" +
