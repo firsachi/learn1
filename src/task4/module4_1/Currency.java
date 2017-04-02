@@ -5,5 +5,6 @@ package task4.module4_1;
  */
 public enum  Currency {
     USD,
+    UAH,
     EUR
 }
